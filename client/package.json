@@ -1,9 +1,11 @@
 {
   "name": "JATE",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "start:dev": "webpack-dev-server --open",
+    "start": "node dist/main.bundle.js",
+    "server": "node dist/main.bundle.js", 
     "build": "webpack --mode production",
-    "start": "webpack --watch"
+    "install": "node dist/install.bundle.js"
   },
   "author": "2U",
   "license": "UNLICENSED",
